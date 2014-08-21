@@ -1,0 +1,225 @@
+/* CSS Document */
+*{
+   margin: 0;
+   padding: 0; 
+}
+body{	
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 22px;
+    background-image: url("../images/bg2.gif");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+    text-shadow: 1px 1px white;
+    padding: 3px;
+    text-align:center;
+}
+
+h2{
+    border-top: 2px solid black;
+    padding-bottom: 3%;
+    margin-left: -15px;
+    transition:all .4s, height .4s, transform .4s;
+    -webkit-transition:all .4s, height .4s, -webkit-transform .4s; 
+}
+
+/*Header AREA*/
+.selfPic{
+    border:2px solid black;
+    border-radius: 80px;
+    width: 120px;
+    margin-right: 15px;
+    transition:width 2s, height 2s, transform 2s;
+    -webkit-transition:width 2s, height 2s, -webkit-transform 2s; 
+}
+
+.selfPic:hover{
+    cursor: pointer;
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg); /* Safari */
+    -webkit-box-shadow: 0 0 5px 5px black;
+    -moz-box-shadow: 0 0 5px 5px black;
+    box-shadow: 0 0 5px 5px black;
+}
+
+/*Main Content AREA*/
+.mainContentArea{
+    color: white;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 10px;
+    background-color: rgba(0,0,0,.4);
+    height: 605px;
+    overflow: hidden;
+}
+
+/*****************************Education Area*****************************/
+.mainContentArea #education h2{
+    float:left;
+    border-top:none;
+}
+
+.mainContentArea #education .logoPic{
+    width: 50px;
+    height: 50px;
+    padding-left: 4%;
+}
+
+.mainContentArea #education{
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-left:50px;
+    height: 8%;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0,0,255,.9);
+    transition:all .4s, height .4s, transform .4s;
+    -webkit-transition:all .4s, height .4s, -webkit-transform .4s;
+}
+
+.contentWrapperScroll{
+    clear: both;
+    height: 72%;
+    overflow-y: scroll;
+}
+
+.mainContentArea #education:hover{
+    height: 50%;
+}
+
+.mainContentArea #education:hover h2{
+    margin-left: 50px;
+}
+
+.mainContentArea #education .education{
+    position: relative;
+    clear:both;
+    padding: 3%;
+    width: 80%;
+    font-size: 100%;
+    border-top: 2px solid black;
+     transition:all .4s, height .4s, transform .4s;
+    -webkit-transition:all .4s, height .4s, -webkit-transform .4s; 
+}
+
+.mainContentArea #education .education:hover{
+    background: rgba(0,0,0,.8);
+}
+
+.mainContentArea #education .education .schoolName{
+    font-weight: bold;
+}
+.mainContentArea #education .education p{
+    
+}
+
+/***********************Experience AREA***************************/
+.mainContentArea #experience h2{
+    float:left;
+    border-top:none;
+}
+
+.mainContentArea #experience .logoPic{
+    width: 50px;
+    height: 50px;
+    padding-left: 4%;
+}
+
+.mainContentArea #experience{
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-left:50px;
+    height: 10%;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0,255,0,.9);
+    transition:all .4s, height .4s, transform .4s;
+    -webkit-transition:all .4s, height .4s, -webkit-transform .4s;
+}
+
+.mainContentArea #experience:hover{
+    height: 80%;
+}
+
+.mainContentArea #experience:hover h2{
+    margin-left: 50px;
+}
+
+.mainContentArea #experience .experience{
+    position: relative;
+    clear:both;
+    padding: 3%;
+    width: 80%;
+    font-size: 100%;
+    border-top: 2px solid black;
+     transition:all .4s, height .4s, transform .4s;
+    -webkit-transition:all .4s, height .4s, -webkit-transform .4s; 
+}
+
+.mainContentArea #experience .experience:hover{
+    background: rgba(0,0,0,.8);
+}
+
+.mainContentArea #experience .experience .schoolName{
+    font-weight: bold;
+}
+.mainContentArea #experience .experience p{
+    
+}
+
+/***********************Skills and Awards AREA************************/
+.mainContentArea #skills h2{
+    float:left;
+    border-top:none;
+}
+
+.mainContentArea #skills .logoPic{
+    width: 50px;
+    height: 50px;
+    padding-left: 4%;
+}
+
+.mainContentArea #skills{
+    margin-bottom: 3%;
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-left:50px;
+    height: 10%;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(255,0,0,.9);
+    transition:all .4s, height .4s, transform .4s;
+    -webkit-transition:all .4s, height .4s, -webkit-transform .4s;
+}
+
+.mainContentArea #skills:hover {
+    height: 50%;
+}
+
+.mainContentArea #skills:hover h2{
+    margin-left: 50px;
+}
+
+.mainContentArea #skills .skills{
+    position: relative;
+    clear:both;
+    padding: 3%;
+    width: 80%;
+    font-size: 100%;
+    border-top: 2px solid black;
+     transition:all .4s, height .4s, transform .4s;
+    -webkit-transition:all .4s, height .4s, -webkit-transform .4s; 
+}
+
+.mainContentArea #skills .skills:hover{
+    background: rgba(0,0,0,.8);
+}
+
+.mainContentArea #skills .skills{
+    font-weight: bold;
+}
+
+
