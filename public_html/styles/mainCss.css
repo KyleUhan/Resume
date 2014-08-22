@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0; 
 }
+
 body{	
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 22px;
@@ -17,10 +18,14 @@ h1{
     font-family: 'Rock Salt', cursive;
     font-size: 50px;
     text-shadow: 1px 1px white;
-    padding: 3px;
+    padding-top: 2%;
     text-align:center;
 }
 
+a{
+    color: blue;
+    text-decoration: none;
+}
 
 /*Header AREA*/
 .selfPic{
@@ -28,36 +33,35 @@ h1{
     border-radius: 80px;
     width: 120px;
     margin-right: 15px;
-    transition:width 2s, height 2s, transform 2s;
-    -webkit-transition:width 2s, height 2s, -webkit-transform 2s; 
 }
 
 .selfPic:hover{
     cursor: pointer;
-    transform:rotate(360deg);
-    -webkit-transform:rotate(360deg); /* Safari */
     -webkit-box-shadow: 0 0 5px 5px black;
     -moz-box-shadow: 0 0 5px 5px black;
     box-shadow: 0 0 5px 5px black;
 }
 
-/*********Main Content AREA*****************/
+/***********************Main Content AREA************************/
 .mainContentArea{
     color: white;
     border-radius: 10px;
     padding-left: 5%;
     padding-right: 10px;
-    background-color: rgba(0,0,0,.4);
     height: 605px;
     overflow: hidden;
+    background-color: rgba(0,0,0,.4);
 }
 
 .mainContentArea .mainContentInner h2{
     float:left;
     margin-left: -15px;
-    transition:all .4s, height .4s, transform .4s;
-    -webkit-transition:all .4s, height .4s, -webkit-transform .4s;
-    opacity: .5;
+    transition:margin-left .4s, height .4s, transform .4s;
+    -webkit-transition:margin-left .4s, height .4s, -webkit-transform .4s;
+}
+
+.mainContentArea .mainContentInner:hover h2{
+    margin-left: 35px;
 }
 
 .mainContentArea .mainContentInner .logoPic{
@@ -70,26 +74,27 @@ h1{
     padding-left: 25px;
     padding-top: 10px;
     margin-left:50px;
-    height: 8%;
+    height: 9%;
     overflow: hidden;
+    border-radius: 2px;
+    opacity: .7;
     box-shadow: 10px 10px 10px rgba(0,0,0,.9);
-    transition:all .4s, height .4s, transform .4s;
-    -webkit-transition:all .4s, height .4s, -webkit-transform .4s;
+    transition:height, opacity .4s, height .4s, transform .4s;
+    -webkit-transition:height, opacity .4s, height .4s, -webkit-transform .4s;
+}
+
+.mainContentArea .mainContentInner:hover{
+    height: 50%;
+    opacity: 1;
 }
 
 .contentWrapperScroll{
     clear: both;
     height: 80%;
     overflow-y: scroll;
-}
-
-.mainContentArea .mainContentInner:hover{
-    height: 50%;
-}
-
-.mainContentArea .mainContentInner:hover h2{
-    margin-left: 50px;
-    opacity: 1;
+    -moz-box-shadow:    inset 0 0 10px rgba(255,255,255,.9);
+    -webkit-box-shadow: inset 0 0 10px rgba(255,255,255,.9);
+    box-shadow:         inset 0 0 10px rgba(255,255,255,.9);
 }
 
 .mainContentArea .mainContentInner .eachInnerBlock .contentWrapperScroll{
@@ -99,19 +104,24 @@ h1{
     width: 80%;
     font-size: 100%;
     border-top: 2px solid black;
-    transition:all .4s, height .4s, transform .4s;
-    -webkit-transition:all .4s, height .4s, -webkit-transform .4s; 
 }
 
 .mainContentArea .mainContentInner .eachInnerBlock{
     padding: 3%;
+    transition:background .2s, height .2s, transform .2s;
+    -webkit-transition:background .2s, height .2s, -webkit-transform .2s; 
 }
 
 .mainContentArea .mainContentInner .eachInnerBlock:hover{
     background: rgba(0,0,0,.8);
 }
 
-/*****************************Education Area*****************************/
+.mainContentArea .mainContentInner .eachInnerBlock .aboutContent{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+/***********************Education Area************************/
 .mainContentArea #education{
     box-shadow: 10px 10px 10px rgba(0,0,255,.9);
 }
@@ -123,9 +133,10 @@ h1{
 .mainContentArea #education .eachInnerBlock{
     border-bottom: 1px solid blue;
     border-top: 1px solid blue;
+    border-left: 1px solid blue;
 }
 
-/***********************Experience AREA***************************/
+/***********************Experience AREA************************/
 
 .mainContentArea #experience{
     box-shadow: 10px 10px 10px rgba(0,255,0,.9);
@@ -134,6 +145,7 @@ h1{
 .mainContentArea #experience .eachInnerBlock{
     border-bottom: 1px solid green;
     border-top: 1px solid green;
+    border-left: 1px solid green;
 }
 
 .mainContentArea #experience:hover{
@@ -144,6 +156,29 @@ h1{
     height: 80%;
 }
 
+#experience #listContainer{
+    display: inline-block;
+}
+
+#experience #listContainer ul{
+    float: left;
+    margin-left: 2%;
+    padding-right: 5%;
+}
+
+#experience #listContainer li:hover{
+    color: rgba(0,255,0,.9);
+}
+
+#experience .eachInnerBlock span{
+    font-size: 26px;
+}
+
+#experience .eachInnerBlock .placeOfEmp{
+    color: rgba(0,255,0,.9);
+    font-size:22px;
+}
+
 /***********************Skills and Awards AREA************************/
 .mainContentArea #skills{
     box-shadow: 10px 10px 10px rgba(255,0,0,.9);
@@ -152,6 +187,35 @@ h1{
 .mainContentArea #skills .eachInnerBlock{
     border-bottom: 1px solid red;
     border-top: 1px solid red;
+    border-left: 1px solid red;
+}
+
+/***********************Contatct AREA************************/
+.mainContentArea .contactWrapper{
+    margin-left:60px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.mainContentArea .contatctInfo{
+    float: left;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+.mainContentArea .contatctInfo span{
+    position:relative;
+    top: 7px;
+}
+
+.mainContentArea .contatctInfo a{
+    color: #62B1F6;
+}
+
+.contactPic{
+    float: left;
+    padding-right: 2%;
+    height: 50px;
 }
 
 
