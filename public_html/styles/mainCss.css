@@ -121,13 +121,23 @@ a{
     padding-top: 5px;
 }
 
+.mainContentArea .mainContentInner .eachInnerBlock .pageNum{
+    position: relative;
+    text-align: center;
+    height: 30px;
+    width:30px;
+    bottom: 10px;
+    text-shadow: 1px 1px #000;
+    float:right;
+
+}
 /***********************Education Area************************/
 .mainContentArea #education{
     box-shadow: 10px 10px 10px rgba(0,0,255,.9);
 }
 
-.mainContentArea #education .education .schoolName{
-    font-weight: bold;
+.schoolName{
+    color: rgba(0,0,255,.9);
 }
 
 .mainContentArea #education .eachInnerBlock{
@@ -170,11 +180,11 @@ a{
     color: rgba(0,255,0,.9);
 }
 
-#experience .eachInnerBlock span{
+.eachInnerBlock span{
     font-size: 26px;
 }
 
-#experience .eachInnerBlock .placeOfEmp{
+.eachInnerBlock .placeOfEmp{
     color: rgba(0,255,0,.9);
     font-size:22px;
 }
@@ -190,6 +200,14 @@ a{
     border-left: 1px solid red;
 }
 
+.mainContentArea #skills .eachInnerBlock span{
+    color: rgba(255,0,0,.9);
+}
+
+.mainContentArea #skills .eachInnerBlock .skillsInner{
+    color: #fff;
+    margin-left: 5%;
+}
 /***********************Contatct AREA************************/
 .mainContentArea .contactWrapper{
     margin-left:60px;
@@ -201,6 +219,7 @@ a{
     float: left;
     padding-right: 5%;
     padding-bottom: 2%;
+    width: 225px;
 }
 
 .mainContentArea .contatctInfo span{
